@@ -6,7 +6,7 @@ Speaks Czech (native), English (fluently), German (A2-B1) and Swedish (A2).
 
 == Timeline
 
-* *07/2020 - (now) : Senior Software Developer at Fibiworks*
+* *07/2021 - (now) : Senior Software Developer at Fibiworks*
     ** Cooperating on deployment automation of a traffic control system
     ** Developing a custom #Terraform# provider for automated firewall configuration using #Go#
     ** #GitLab# CI/CD pipeline management
@@ -17,7 +17,7 @@ Speaks Czech (native), English (fluently), German (A2-B1) and Swedish (A2).
     ** Co-design of the system API by using #OpenAPI# specifications.
     ** Creating decent amount of a product documentation
 
-* *09/2014 - 09/2019 : Software Engineer at Siemens*
+* *09/2014 - 09/2020 : Software Engineer at Siemens*
     ** Implementing mobile-first web application for inspection of traffic lights wiring. Backend built on embedded #Java# stack, frontend implemented as SPA web application using #GWT# framework.
     ** Developing a web application for managing a traffic lights controller. Maintaining backend part in Java, running on the embedded device and frontend part written in #JavaScript# (#jQuery#) and #Java# (#GWT#). 
     **  Collaboration with a #C♯# team to develop WPF applications for the user&technical documentation of Siemens traffic controllers.
@@ -50,7 +50,7 @@ After this experience I've decided to return back to development and gain more k
 
 Besides my work, I like to experiment and develop in different programming languages. Though being most proficient in a #Java#, #Javascript# and #Go#, I'm learning a #Rust# and #Elixir# languages in my spare time. I'm also fan of a #functional paradigm# in programming, therefore I'm applying its patterns in my daily work and also in my personal projects. 
 
-To stay in touch with current frontend technologies, I occasionally code some hobby and personal projects in #Next.JS#, #React# and #Vue.js#. 
+To stay in touch with current frontend technologies, I occasionally code some hobby and personal projects in #Next.JS#, #React# and #Vue.js#. I've also joined a hype train around #TailwindCSS#. 
 
 == Links
 
