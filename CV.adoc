@@ -1,0 +1,33 @@
+= NAME SURNAME
+
+Hello, this is my CV. Enjoy the reading!
+
+== Summary 
+
+== Timeline
+
+* *07/2020 - (now) - Senior Developer at Fibiworks*
+
+* *10/2019 - 06/2020 - Software Architect at Siemens Mobility*
+
+* *09/2014 - 09/2019 - Software Engineer at Siemens*
+    ** Implementing mobile-first web application for inspection of traffic lights wiring. Backend built on embedded #Java# stack, frontend implemented as SPA web application using #GWT#. 
+    **  Collaboration with a #C♯# team to develop WPF applications for the user&technical documentation of Siemens traffic controllers.
+    ** Conversion of a legacy  build system to a well-structured #Gradle# and #Git# based build.
+    ** Recreation of GWT frontend to a new #React#-based frontend.
+
+
+
+* *09/2015 -  Master's degree in Information Technology at University of Pardubice*
+
+
+* *09/2012 -  Bachelor's degree in Information Technology at University of Pardubice*
+
+
+== Full story
+
+== Links
+
+* Github
+* LinkedIn
+* Twitter
