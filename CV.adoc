@@ -1,27 +1,35 @@
 = NAME SURNAME
 
-Hello, this is my CV. Enjoy the reading!
 
-== Summary 
+A software developer with a strong background in web development. Most proficient in Java and Go languages. Learning and embracing Dev(Sec)Ops concepts and culture. Keen to learn new technologies and programming languages. Experience with automation, build systems and CI/CD. Occasional frontend developer.
+
+Speaks Czech (native), English (fluently), German (A2-B1), Swedish (A2).
 
 == Timeline
 
-* *07/2020 - (now) - Senior Developer at Fibiworks*
+* *07/2020 - (now) : Senior Software Developer at Fibiworks*
+    ** Cooperating on deployment automation of a traffic control system
+    ** Developing a custom #Terraform# provider for automated firewall configuration using #Go#
+    ** #GitLab# CI/CD pipeline management
 
-* *10/2019 - 06/2020 - Software Architect at Siemens Mobility*
+* *10/2020 - 06/2021 : Software Architect at Siemens Mobility*
+    ** Taking part on realization of the suggested architectural design for the cyber-security related identity and rolling-stock asset management system.
+    ** Conversion of the integration test system into #Docker#-ized environment.
+    ** Co-design of the system API by using #OpenAPI# specifications.
+    ** Creating decent amount of a product documentation
 
-* *09/2014 - 09/2019 - Software Engineer at Siemens*
+* *09/2014 - 09/2019 : Software Engineer at Siemens*
     ** Implementing mobile-first web application for inspection of traffic lights wiring. Backend built on embedded #Java# stack, frontend implemented as SPA web application using #GWT#. 
     **  Collaboration with a #C♯# team to develop WPF applications for the user&technical documentation of Siemens traffic controllers.
     ** Conversion of a legacy  build system to a well-structured #Gradle# and #Git# based build.
-    ** Recreation of GWT frontend to a new #React#-based frontend.
+    ** Recreation of a legacy GWT frontend as a new state-of-the-art #React#-based frontend.
 
 
 
-* *09/2015 -  Master's degree in Information Technology at University of Pardubice*
+* *09/2015 :  Master's degree in Information Technology at University of Pardubice*
 
 
-* *09/2012 -  Bachelor's degree in Information Technology at University of Pardubice*
+* *09/2012 :  Bachelor's degree in Information Technology at University of Pardubice*
 
 
 == Full story
