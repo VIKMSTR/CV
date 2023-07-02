@@ -19,7 +19,7 @@ jobs:
     - name: Deploy docs to ghpages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./
   adoc_build_pdf:
@@ -36,7 +36,5 @@ jobs:
      - name: install asciidoc-pdf
        run: "gem install asciidoctor-pdf"
      - name: run asciidoc-pdf
-       run: asciidoctor-pdf -a pdf-theme=theme.yml -a pdf-fontsdir=".;GEM_FONTS_DIR" CV.adoc
+       run: asciidoctor-pdf -a pdf-theme=theme.yml -a pdf-fontsdir=".;GEM_FONTS_DIR" CV.adoc --trace
      
-       
-  
