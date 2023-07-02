@@ -36,5 +36,5 @@ jobs:
      - name: install asciidoc-pdf
        run: "gem install asciidoctor-pdf"
      - name: run asciidoc-pdf
-       run: asciidoctor-pdf -a pdf-theme=theme.yml -a pdf-fontsdir=".;GEM_FONTS_DIR" CV.adoc --trace
-     
+       #run: asciidoctor-pdf -a pdf-theme=theme.yml -a pdf-fontsdir=".;GEM_FONTS_DIR" CV.adoc --trace
+       run: make pdf 
