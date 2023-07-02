@@ -1,12 +1,20 @@
 = Viktor Krejčíř
 
+{blank}[_viktor cray-chee-rsh_] 
+
 A software developer with a strong background in web development. Most proficient in Java, Javascript and Go languages. Learning and embracing Dev(Sec)Ops concepts and culture. Keen to learn new technologies and programming languages. Experience with automation, build systems and CI/CD. Occasional frontend developer.
+Mostly commits to GitLab, hobby projects to GitHub. Went through Scrum, SAFe, V-model and agile development in a small team.
+
+Still trying to grasp on Rust, Clojure and Elixir.
 
 Speaks Czech (native), English (fluently), German (A2-B1) and Swedish (A2).
 
 == Timeline
+* *05/2023 - (now) Senior Software Developer in Fibiworks*
+    ** Development of bank client evidence system in Kotlin/Micronaut
+    ** Migrating API to OpenAPI specification
 
-* *07/2021 - (now): Senior Software Developer in Fibiworks*
+* *07/2021 - 05/2023: Senior Software Developer in Fibiworks*
     ** Cooperating on deployment automation of a traffic control system
     ** Developing a custom Terraform provider for automated firewall configuration using Go
     ** GitLab CI/CD pipeline management
@@ -50,7 +58,7 @@ After this experience, I've decided to return back to development and gain more 
 
 Besides my work, I like to experiment and  develop in different programming languages. Though being most proficient in a Java, Javascript and Go, I'm learning #Rust# and #Elixir# languages in my spare time. I'm also a fan of the #functional paradigm# in programming, therefore I'm applying its patterns in my daily work and also in my personal projects. 
 
-To stay in touch with current frontend technologies, I occasionally code some hobby and personal projects in #Next.JS#, #React#, and #Vue.js#. I also joined a hype train around #TailwindCSS#. 
+To stay in touch with current frontend technologies, I occasionally code some hobby and personal projects in #Svelte#. 
 
 == Links
 
@@ -58,4 +66,4 @@ To stay in touch with current frontend technologies, I occasionally code some ho
 
 * LinkedIn: https://www.linkedin.com/in/viktor-krejcir/
 
-* Twitter: https://twitter.com/VIKTRCZ
+* This CV : https://github.com/VIKMSTR/CV
