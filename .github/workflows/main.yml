@@ -4,7 +4,7 @@ on:
     - master
 jobs:
   adoc_build_web:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     name: asciidoctor -D docs --backend=html5 -o index.html -a toc2 docs/index.adoc 
     steps:
     - name: Checkout code
@@ -23,7 +23,7 @@ jobs:
         publish_branch: gh-pages
         publish_dir: ./
   adoc_build_pdf:
-     runs-on: ubuntu-18.04
+     runs-on: ubuntu-latest
      steps:
      - name: Checkout code
        uses: actions/checkout@v2
