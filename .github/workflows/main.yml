@@ -5,7 +5,7 @@ on:
 jobs:
   adoc_build_web:
     runs-on: ubuntu-latest
-    name: asciidoctor -D docs --backend=html5 -o index.html -a toc2 docs/index.adoc 
+    name: Build CV 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -14,11 +14,6 @@ jobs:
       uses: Analog-inc/asciidoctor-action@master
       with:
         shellcommand: "./.github/workflows/asciidoc.sh"  
-    #- name: Get build container
-    #  id: adocbuild
-    #  uses: avattathil/asciidoctor-action@master
-    #  with:
-    #      program: "asciidoctor --backend=html5 -o index.html ./CV.adoc"
     - name: Print execution time
       run: echo "Time ${{ steps.adocbuild.outputs.time }}"
     - name: Deploy docs to ghpages
@@ -32,19 +27,4 @@ jobs:
       with:
         name: Docs
         path: ./outputs/pdf/    
-  adoc_build_pdf:
-     runs-on: ubuntu-latest
-     steps:
-     - name: Checkout code
-       uses: actions/checkout@v2
-     - name: Setup Ruby, JRuby and TruffleRuby
-       uses: ruby/setup-ruby@v1.152.0
-       with:
-          ruby-version: "3.2.0"
-     - name: install asciidoc-pdf
-       run: "gem install asciidoctor-pdf"
-     - name: run asciidoc-pdf
-       #run: asciidoctor-pdf -a pdf-theme=theme.yml -a pdf-fontsdir=".;GEM_FONTS_DIR" CV.adoc --trace
-       run: make pdf
-       env:
-         GEM_FONTS_DIR: "./"
+
