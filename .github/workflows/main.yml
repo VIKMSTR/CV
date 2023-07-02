@@ -1,0 +1,40 @@
+on:
+  push:
+    branches:
+    - master
+jobs:
+  adoc_build_web:
+    runs-on: ubuntu-18.04
+    name: asciidoctor -D docs --backend=html5 -o index.html -a toc2 docs/index.adoc 
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Get build container
+      id: adocbuild
+      uses: avattathil/asciidoctor-action@master
+      with:
+          program: "asciidoctor -D docs --backend=html5 -o index.html docs/index.adoc"
+    - name: Print execution time
+      run: echo "Time ${{ steps.adocbuild.outputs.time }}"
+    - name: Deploy docs to ghpages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        publish_branch: gh-pages
+        publish_dir: ./
+  adoc_build_pdf:
+     runs-on: ubuntu-18.04
+     steps:
+     - name: Checkout code
+       uses: actions/checkout@v2
+     - name: Setup Ruby, JRuby and TruffleRuby
+        # You may pin to the exact commit or the version.
+        # uses: ruby/setup-ruby@250fcd6a742febb1123a77a841497ccaa8b9e939
+       uses: ruby/setup-ruby@v1.152.0
+     - name: install asciidoc-pdf
+       run: "gem install asciidoctor-pdf"
+     - name: run asciidoc-pdf
+       run: asciidoctor-pdf -a pdf-theme=theme.yml -a pdf-fontsdir=".;GEM_FONTS_DIR" CV.adoc
+     
+       
+  
