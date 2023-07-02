@@ -9,11 +9,16 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Get build container
-      id: adocbuild
-      uses: avattathil/asciidoctor-action@master
+    - name: Convert AsciiDoc step
+      id: documents
+      uses: Analog-inc/asciidoctor-action@master
       with:
-          program: "asciidoctor --backend=html5 -o index.html ./CV.adoc"
+        shellcommand: "./.github/workflows/asciidoc.sh"  
+    #- name: Get build container
+    #  id: adocbuild
+    #  uses: avattathil/asciidoctor-action@master
+    #  with:
+    #      program: "asciidoctor --backend=html5 -o index.html ./CV.adoc"
     - name: Print execution time
       run: echo "Time ${{ steps.adocbuild.outputs.time }}"
     - name: Deploy docs to ghpages
@@ -21,7 +26,12 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
-        publish_dir: ./
+        publish_dir: ./outputs/html
+    - name: Save AsciiDoc step
+      uses: actions/upload-artifact@v1
+      with:
+        name: Docs
+        path: ./outputs/pdf/    
   adoc_build_pdf:
      runs-on: ubuntu-latest
      steps:
