@@ -13,7 +13,7 @@ jobs:
       id: adocbuild
       uses: avattathil/asciidoctor-action@master
       with:
-          program: "asciidoctor --backend=html5 -o index.html CV.adoc"
+          program: "asciidoctor --backend=html5 -o index.html ./CV.adoc"
     - name: Print execution time
       run: echo "Time ${{ steps.adocbuild.outputs.time }}"
     - name: Deploy docs to ghpages
@@ -28,8 +28,6 @@ jobs:
      - name: Checkout code
        uses: actions/checkout@v2
      - name: Setup Ruby, JRuby and TruffleRuby
-        # You may pin to the exact commit or the version.
-        # uses: ruby/setup-ruby@250fcd6a742febb1123a77a841497ccaa8b9e939
        uses: ruby/setup-ruby@v1.152.0
        with:
           ruby-version: "3.2.0"
@@ -37,4 +35,6 @@ jobs:
        run: "gem install asciidoctor-pdf"
      - name: run asciidoc-pdf
        #run: asciidoctor-pdf -a pdf-theme=theme.yml -a pdf-fontsdir=".;GEM_FONTS_DIR" CV.adoc --trace
-       run: make pdf 
+       run: make pdf
+       env:
+         GEM_FONTS_DIR: "./"
