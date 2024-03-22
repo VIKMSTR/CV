@@ -33,5 +33,3 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         artifacts: "./outputs/pdf/*.pdf"
-        tag: "SNAPSHOT"
-        commit: "master"
