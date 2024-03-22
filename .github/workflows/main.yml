@@ -6,6 +6,8 @@ jobs:
   adoc_build_web:
     runs-on: ubuntu-latest
     name: Build CV 
+    permissions:
+      contents: write
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -28,11 +30,8 @@ jobs:
         name: Docs
         path: ./outputs/pdf/
     - name: Github Release
-      uses: elgohr/Github-Release-Action@v5
-      env:
-        GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+      uses: ncipollo/release-action@v1
       with:
-        # The name of the release to publish
-        title: CV
-        # Directory of the repository that the should create the release
-        workdir: ./outputs/pdf/
+        artifacts: "./outputs/pdf/*.pdf"
+        tag: "SNAPSHOT"
+        commit: "master"
