@@ -34,4 +34,4 @@ jobs:
       with:
         artifacts: "./outputs/pdf/*.pdf"
         commit: "master"
-   
+        tag: "master" 
