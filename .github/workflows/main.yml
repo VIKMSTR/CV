@@ -31,7 +31,7 @@ jobs:
         path: ./outputs/pdf/
     - name: Get current date
       id: date
-      run: echo "::set-output name=date::$(date +'%Y-%m-%d_%H:%M:%S')"   
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d-%H_%M_%S')"   
     - name: Github Release
       uses: ncipollo/release-action@v1
       with:
