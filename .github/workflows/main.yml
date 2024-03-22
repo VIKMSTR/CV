@@ -29,9 +29,12 @@ jobs:
       with:
         name: Docs
         path: ./outputs/pdf/
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"    
     - name: Github Release
       uses: ncipollo/release-action@v1
       with:
         artifacts: "./outputs/pdf/*.pdf"
         commit: "master"
-        tag: "master" 
+        tag: ${{ steps.date.outputs.date }}
