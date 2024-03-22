@@ -7,7 +7,7 @@ Mostly commits to GitLab, hobby projects to GitHub. Went through Scrum, SAFe, V-
 
 Still trying to grasp on Rust, Clojure and Elixir.
 
-Speaks Czech (native), English (fluently), German (A2-B1) and Swedish (A2).
+Speaks Czech (native), English (fluently), German (B1), Swedish (A2) and currently learning French (A1).
 
 == Timeline
 * *09/2023 - (now) Senior Backend Developer in Expertalabs*
