@@ -1,6 +1,6 @@
 = Viktor Krejčíř
 
-{blank}[_viktor cray-chee-rsh_] 
+{blank}[_viktor cray-chee-rsh_]
 
 A software developer with a strong background in web development. Most proficient in Java, Javascript and Go languages. Learning and embracing Dev(Sec)Ops concepts and culture. Keen to learn new technologies and programming languages. Experience with automation, build systems and CI/CD. Occasional frontend developer.
 Mostly commits to GitLab, hobby projects to GitHub. Went through Scrum, SAFe, V-model and agile development in a small team.
@@ -12,7 +12,8 @@ Speaks Czech (native), English (fluently), German (B1), Swedish (A2) and current
 == Timeline
 * *09/2023 - (now) Senior Backend Developer in Expertalabs*
     ** Development of bank client evidence system in Kotlin/Micronaut
-    ** Migrating API to OpenAPI specification 
+    ** Migrating API to OpenAPI specification
+    ** .NET (C#/ASPCore) development of the embedded device services.
 
 * *05/2023 - 09/2023 Senior Software Developer in Fibiworks*
     ** Development of bank client evidence system in Kotlin/Micronaut
@@ -31,7 +32,7 @@ Speaks Czech (native), English (fluently), German (B1), Swedish (A2) and current
 
 * *09/2014 - 09/2020: Software Engineer in Siemens*
     ** Implementing mobile-first web application for inspection of traffic lights wiring. Backend built on embedded Java stack, frontend implemented as SPA web application using GWT framework.
-    ** Developing a web application for managing a traffic lights controller. Maintaining backend part in Java, running on the embedded device and frontend part written in JavaScript (jQuery) and Java (GWT). 
+    ** Developing a web application for managing a traffic lights controller. Maintaining backend part in Java, running on the embedded device and frontend part written in JavaScript (jQuery) and Java (GWT).
     **  Collaboration with a C♯ team to develop WPF applications for the user&technical documentation of Siemens traffic controllers.
     ** Conversion of a legacy build system to a well-structured Gradle and Git based build.
     ** Recreation of a legacy GWT frontend as a new state-of-the-art React-based frontend.
@@ -46,25 +47,27 @@ Speaks Czech (native), English (fluently), German (B1), Swedish (A2) and current
 
 == Full story
 
-I actively started programming and developing applications at University of Pardubice. Most of my work was written in #C♯# and #Java# with some specific applications in #PHP# and #C(++)#. During the Master's degree (and compiling a thesis), I've started my first full-time job as a software developer in Siemens. 
+I actively started programming and developing applications at University of Pardubice. Most of my work was written in #C♯# and #Java# with some specific applications in #PHP# and #C(++)#. During the Master's degree (and compiling a thesis), I've started my first full-time job as a software developer in Siemens.
 
-I was a junior developer, yet I've managed to learn a lot from a very experienced team around me. The first project I worked on was a #mobile-first web application# for inspection of traffic lights wiring. The application was built on embedded #Java# stack, frontend implemented as #SPA web application# using #GWT# framework. Being Java developer, I learned a lot about the development process and the best practices - for example in the later days, our team was using a #SCRUM# and #Agile# methodology. The project resulted in an attractive feature of the Siemens traffic controller later on. 
+I was a junior developer, yet I've managed to learn a lot from a very experienced team around me. The first project I worked on was a #mobile-first web application# for inspection of traffic lights wiring. The application was built on embedded #Java# stack, frontend implemented as #SPA web application# using #GWT# framework. Being Java developer, I learned a lot about the development process and the best practices - for example in the later days, our team was using a #SCRUM# and #Agile# methodology. The project resulted in an attractive feature of the Siemens traffic controller later on.
 
-Having some C♯ knowledge from university projects, I also participated in implementation of a desktop #WPF# tool, that allows technicians to generate documentation of the embedded device with specific configuration. 
+Having some C♯ knowledge from university projects, I also participated in implementation of a desktop #WPF# tool, that allows technicians to generate documentation of the embedded device with specific configuration.
 
-However, a long-running project in Siemens for me as a software developer was a development of a #web application# for managing a traffic lights controller. This useful application was mainly written in Java (running on #Jetty# server), with some frontend components written in #Javascript# and #jQuery#. I was also part of a team, which successfully migrated a legacy and unreliable build system based on #Ant# and ClearCase VCS to a #Gradle# and #Git#. Because of a specific requirements, I wrote a #Gradle# plugin in #Groovy# to fit our needs. This was my first experience with a thing, that we call "#DevOps#" today. 
+However, a long-running project in Siemens for me as a software developer was a development of a #web application# for managing a traffic lights controller. This useful application was mainly written in Java (running on #Jetty# server), with some frontend components written in #Javascript# and #jQuery#. I was also part of a team, which successfully migrated a legacy and unreliable build system based on #Ant# and ClearCase VCS to a #Gradle# and #Git#. Because of a specific requirements, I wrote a #Gradle# plugin in #Groovy# to fit our needs. This was my first experience with a thing, that we call "#DevOps#" today.
 
-Technologies come and go. The GWT is a good example of a technology that became quickly obsolete. Despite its advantage (being a great tool for Java programmers to write a frontend) its popularity was not long. Therefore we decided to convert our legacy frontend to #React#. The frontend side of our project became much easier to develop and maintain. 
+Technologies come and go. The GWT is a good example of a technology that became quickly obsolete. Despite its advantage (being a great tool for Java programmers to write a frontend) its popularity was not long. Therefore we decided to convert our legacy frontend to #React#. The frontend side of our project became much easier to develop and maintain.
 
-Then I've seized an opportunity to become a #Software architect# in Siemens Mobility. Our team was working on a #Java + Spring Boot web application# that was running on a cluster of embedded devices with distributed #PostgreSQL# database. In addition to a #Gradle and Ant#, this was the project where I've added #Maven# to my portfolio of a Java build systems. As an architect, I was responsible for the development of the architecture and the implementation of the system. I was also partly responsible for the design of the integration test system based on #Robot Framework#, which was running on a #Docker# environment (by using #Docker-compose#). 
+Then I've seized an opportunity to become a #Software architect# in Siemens Mobility. Our team was working on a #Java + Spring Boot web application# that was running on a cluster of embedded devices with distributed #PostgreSQL# database. In addition to a #Gradle and Ant#, this was the project where I've added #Maven# to my portfolio of a Java build systems. As an architect, I was responsible for the development of the architecture and the implementation of the system. I was also partly responsible for the design of the integration test system based on #Robot Framework#, which was running on a #Docker# environment (by using #Docker-compose#).
 
 After this experience, I've decided to return back to development and gain more knowledge (mostly in #cloud#-related projects). So I joined Fibiworks where I  assisted with automation of a traffic control system deployment in hybrid #Kubernetes# environment. For automating a configuration of a firewall I  developed in increasingly popular #Go# language. The result was a #Terraform# provider for a pfsense firewall.
 
 When changing my employer once again, I've taken part in development of client management system for a new bank. We used Kotlin language and Micronaut framework to developm our microsystems, with API managed via OpenAPI specification. This also allowed us to more fluently integrate with various external systems from other companies and government.
 
-Besides my work, I like to experiment and  develop in different programming languages. Though being most proficient in a Java, Javascript and Go, I'm learning #Rust# and #Elixir# languages in my spare time. I'm also a fan of the #functional paradigm# in programming, therefore I'm applying its patterns in my daily work and also in my personal projects. 
+After finishing with the project (along with putting the system in production), I took a part in a #C♯# development again (after all these years). This time in a modern ASPCore .NET framework, using C#. Thanks to a new multiplatform compatibility, this technology was used as an extension of embedded device firmware, running on #GNU/Linux#.
 
-To stay in touch with current frontend technologies, I occasionally code some hobby and personal projects in #Svelte#. 
+Besides my work, I like to experiment and  develop in different programming languages. Though being most proficient in a Java, Javascript and Go, I'm learning #Rust# and #Elixir# languages in my spare time. I'm also a fan of the #functional paradigm# in programming, therefore I'm applying its patterns in my daily work and also in my personal projects.
+
+To stay in touch with current frontend technologies, I occasionally code some hobby and personal projects in #Svelte#.
 
 == Links
 
